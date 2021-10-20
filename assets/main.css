@@ -228,11 +228,11 @@ div.item {
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 120px;
+    width: 300px;
 }
 img.profileimg {
-    width: 100px;
-    height: 100px;
+    width: 270px;
+    height: 270px;
     background-color: grey;
 }
 .caption {
