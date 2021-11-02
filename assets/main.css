@@ -25,35 +25,26 @@
 }
 
 .rightbar {
-height: 100%;
-width: 15%;
-position: fixed;
-top: 0;
-right: 0;
-background-color: white;
-line-height:1.5em;
-padding: 0 10px;
+	position:absolute;
+	right:0;
+	width: 17%;
+	background-color: white;
+	line-height:1.5em;
+	padding: 0 2px;
 }
 
 .sidebar {
-height: 100%;
-width: 15%;
-position: fixed;
-top: 0;
-left: 0;
-padding: 0 10px;
-background-color: white;
-line-height:1.5em;
-}
-
-.sidebar div {
-font-size: 1em;
-display: block;
-line-height:1.5em;
+	position: absolute;
+	width: 17%;
+	left: 0;
+	padding: 0 2px;
+	background-color: white;
+	line-height:1.5em;
+	font-size: 1em; 
 }
 
 body{
-    background-color: #fafafa;
+    background-color: white;
     background-size: cover;
     background-attachment: fixed;
     color: #505050; 
@@ -61,9 +52,10 @@ body{
     font-family:'Roboto',sans-serif;
     font-size:1em;
     line-height:1.5em;
-    margin: 60px auto;
+    /* margin: 60px auto;  */
     /* width: 1175px; */
-	width: 75%;
+	/* width: 80%; */
+	position:relative;
 }
 
 img{
@@ -71,17 +63,18 @@ img{
 	height: auto;
 }
 
+.block{
+	padding: 0 10px;
+	background-color: rgb(165 31 36 / 10%);
+	border-color:#813c54;
+	border-style:solid;
+	border-width:2px;
+}
+
 .middle{
-    background-color: #fafafa;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #505050; 
-    text-align:left;
-    font-family:'Roboto',sans-serif;
-    font-size:1em;
-    line-height:1.5em;
-    margin: 60px auto;
-    width: 85%;
+	position: relative;
+    margin: auto auto;
+    width: 65%;
 }
 
 a{color: darkblue; text-decoration:none;}
@@ -94,7 +87,7 @@ h1{font-size:2.67em;}
 h2{font-size:2.00em;}
 h3{font-size:1.67em;color: #52739e;}
 h4{font-size:1.33em;}
-h5{padding-top: 5px;font-size:1.2em;text-decoration: underline;}
+h5{padding-top: 5px; font-size:1.33em; color: #52739e;}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; width:95%; text-align:left;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
 ul{margin:5px auto 5px auto; padding:0px; width:800px; text-align:left;}
@@ -125,8 +118,8 @@ th,td{
 }
 
 /* Website Banner */
-.banner {position: relative; font-family:'Roboto Slab',serif; width:auto;}
-.top-left {font-size:5em; color: #505050; background: #fafafa; text-align: center; width: 100%; line-height: 1em; position: relative; padding: 0 0 0 0; top: 0px;}
+.banner {position: relative; font-family:'Roboto Slab',serif; width: 100%; text-align: right;}
+.top-left {font-size:4.5em; color: #505050; background: white; text-align: center; width: 100%; line-height: 1em; position: relative; padding: 0 0 0 0; top: 0px;}
 .bottom-right {font-size:2em; color: white; line-height: 1em; width: 100%; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
 /* Conference Title Logo */
@@ -135,13 +128,14 @@ th,td{
 .year{color: #505050; font-size:0.67em; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
-table.navigation{width:100%;}
-td.navigation{font-size:1.5em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+table.navigation{width:80%;}
+td.navigation{font-size:1.2em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 
 /* Dropdown Menu */
 .navbar {
+  width: 100%;
   overflow: hidden;
-  background-color: gray;
+  background-color: #52739e;
 }
 
 .navbar a {
@@ -209,7 +203,7 @@ td.sponsor img{width: 100%}
 td.room{padding: 0px 4px 4px 0px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
 td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
 td.title{padding: 0px 4px 4px 0px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
-td.title-special{padding: 0px 4px 4px 0px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+td.title-special{padding: 0px 0px 0px 0px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
 td.speaker{padding: 0px 4px 4px 0px; font-style: italic; font-size:1em; max-height:999999px}
 td.abstract{padding: 0px 4px 4px 0px; font-size:1em; max-height:999999px}
 td.abstract img{display: block; margin: 4px auto 8px auto}
@@ -217,7 +211,7 @@ table.plenary{padding-top: 8px; background: #ffffff;}
 
 /* Registration and Directions iframes and Images */
 iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
-iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
+iframe.directions{display:block; margin:1em auto 2em auto; width:100%; height:400px; border:none;}
 img.center{display:block; width:67%; margin:1em auto 2em auto;}
 
 /* Flyer Images */
@@ -234,12 +228,12 @@ div.item {
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 300px;
+    width: 200px;
 }
 img.profileimg {
-    width: 270px;
-    height: 270px;
-    background-color: grey;
+    width: 150px;
+    height: 150px;
+    background-color: white;
 }
 .caption {
     display: block;
@@ -247,13 +241,18 @@ img.profileimg {
 
 /* Making the site mobile-friendly */
 @media only screen and (max-width: 1100px) {
+	body{
+		display:flex;
+        flex-flow: column;
+	}
     h2{font-size:2.0em;}
     p{font-size:1.5em; line-height:1.5em;}
     th,td,tr{font-size:1.5em; line-height:1.5em;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
-    table.footer{font-size:0.5em;}
-	.sidebar{visibility: hidden;}
-	.rightbar{position:relative;}
+    table.footer{order:4; font-size:0.5em;}
+	.middle{order:1; width:90%;}
+	.sidebar{order:2; position:relative; width:50%; margin: auto auto;}
+	.rightbar{order:3; position:relative; bottom:0; width: 50%; margin: auto auto;}
 }
 
